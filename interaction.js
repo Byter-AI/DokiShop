@@ -1,4 +1,4 @@
-// app.js
+//  interaction.js
 
 // Función para generar el código QR
 function generateQRCode() {
