@@ -49,3 +49,29 @@ function redirectWithoutQRCode() {
     const url = `redirection.html?data=${encodeURIComponent(petData)}`;
     window.location.href = url;
 }
+
+// Función para cargar los datos de la mascota desde la URL
+function getPetData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const data = urlParams.get('data');
+
+    if (data) {
+        const petData = JSON.parse(decodeURIComponent(data));
+
+        // Mostramos los datos de la mascota en la página
+        document.getElementById('pet-info').innerHTML = `
+            <p><strong>Nombre:</strong> ${petData.name}</p>
+            <p><strong>Tipo:</strong> ${petData.type}</p>
+            <p><strong>Edad:</strong> ${petData.age}</p>
+        `;
+    } else {
+        document.getElementById('pet-info').innerHTML = `<p>No se encontraron datos de la mascota.</p>`;
+    }
+}
+
+// Ejecutar al cargar la página para obtener los datos de la mascota
+window.onload = function() {
+    if (window.location.pathname.endsWith('redirection.html')) {
+        getPetData();
+    }
+};
