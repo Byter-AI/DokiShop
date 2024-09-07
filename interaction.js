@@ -83,7 +83,7 @@ function checkForm() {
 
 // Ejecutar al cargar la página para obtener los datos de la mascota
 window.onload = function() {
-    if (window.location.pathname.includes('redireccion.html')) {
+    if (window.location.pathname.includes('redirection.html')) {
         getPetData();
     }
 };
