@@ -3,30 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos de la Mascota</title>
+    <title>Información de la Mascota</title>
     <link rel="stylesheet" href="dressed.css">
 </head>
 <body>
     <h1>Información de la Mascota</h1>
     <div id="pet-info"></div>
-    <a href="index.html">Volver a la Página Principal</a>
 
+    <a href="index.html">Volver al Registro</a>
+
+    <script src="interaction.js"></script>
     <script>
-        function getPetData() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const data = urlParams.get('data');
-            if (data) {
-                const petData = JSON.parse(decodeURIComponent(data));
-                document.getElementById('pet-info').innerHTML = `
-                    <p><strong>Nombre:</strong> ${petData.name}</p>
-                    <p><strong>Tipo:</strong> ${petData.type}</p>
-                    <p><strong>Edad:</strong> ${petData.age}</p>
-                `;
-            }
-        }
-
-        // Ejecutar al cargar la página
-        window.onload = getPetData;
+        window.onload = function() {
+            getPetData();
+        };
     </script>
 </body>
 </html>
