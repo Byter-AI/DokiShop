@@ -1,4 +1,4 @@
-//  interaction.js
+// app.js
 
 // Función para generar el código QR
 function generateQRCode() {
@@ -13,7 +13,7 @@ function generateQRCode() {
     }
 
     // Datos de la mascota en formato JSON
-    const petData = JSON.stringify({ name: name, type: type, age: age });
+    const petData = JSON.stringify({ name, type, age });
 
     // Generar la URL relativa que funcionará tanto en local como en producción
     const url = `redirection.html?data=${encodeURIComponent(petData)}`;
@@ -43,9 +43,9 @@ function redirectWithoutQRCode() {
     }
 
     // Datos de la mascota en formato JSON
-    const petData = JSON.stringify({ name: name, type: type, age: age });
+    const petData = JSON.stringify({ name, type, age });
 
-    // Redirigir manualmente a la página mascota.html con los datos de la mascota
+    // Redirigir manualmente a la página aversifunciona.html con los datos de la mascota
     const url = `redirection.html?data=${encodeURIComponent(petData)}`;
     window.location.href = url;
 }
