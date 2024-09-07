@@ -16,7 +16,7 @@ function generateQRCode() {
     const petData = JSON.stringify({ name: name, type: type, age: age });
 
     // Generamos la URL que contendrá los datos de la mascota
-    const url = `${window.location.origin}/redireccion.html?data=${encodeURIComponent(petData)}`;
+    const url = `${window.location.origin}/redirection.html?data=${encodeURIComponent(petData)}`;
 
     // Generar el código QR usando la librería qrcode-generator
     const qr = qrcode(0, 'L');
@@ -46,7 +46,7 @@ function redirectWithoutQRCode() {
     const petData = JSON.stringify({ name: name, type: type, age: age });
 
     // Redirigir manualmente a la página mascota.html con los datos de la mascota
-    const url = `${window.location.origin}/redireccion.html?data=${encodeURIComponent(petData)}`;
+    const url = `${window.location.origin}/redirection.html?data=${encodeURIComponent(petData)}`;
     window.location.href = url;
 }
 
