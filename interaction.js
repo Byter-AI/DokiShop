@@ -75,3 +75,15 @@ window.onload = function() {
         getPetData();
     }
 };
+// Función para generar el QR de la página mascota.html
+function generatePageQRCode() {
+    const currentUrl = window.location.href;
+
+    // Generar el código QR usando la librería qrcode-generator
+    const qr = qrcode(0, 'L');
+    qr.addData(currentUrl);
+    qr.make();
+
+    // Mostrar el QR en la página
+    document.getElementById('qrcode').innerHTML = qr.createImgTag();
+}
