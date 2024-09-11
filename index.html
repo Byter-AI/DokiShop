@@ -10,22 +10,22 @@
     <h1>Registra a tu Mascota</h1>
     <form id="petForm">
         <label for="name">Nombre de la Mascota:</label>
-        <input type="text" id="name" name="name" required oninput="checkForm()"><br><br>
+        <input type="text" id="name" name="name" required><br><br>
 
         <label for="type">Tipo de Mascota:</label>
-        <input type="text" id="type" name="type" required oninput="checkForm()"><br><br>
+        <input type="text" id="type" name="type" required><br><br>
 
         <label for="age">Edad:</label>
-        <input type="number" id="age" name="age" required oninput="checkForm()"><br><br>
+        <input type="number" id="age" name="age" required><br><br>
 
-        <button type="button" onclick="generateQRCode()">Generar Código QR</button>
-        <button type="button" id="manualEntryButton" onclick="redirectWithoutQRCode()" disabled>Ver sin Código QR</button> <!-- Botón deshabilitado -->
+        <button type="button" onclick="redirectWithoutQRCode()">Registrar Mascota</button>
     </form>
 
-    <div id="qrcode"></div>
+    <a href="aversifunciona.html"> Ver sin Código </a> 
+
+    <h1 id="info-section" style="display:none;">Información de la Mascota</h1>
+    <div id="pet-info" style="display:none;"></div>
 
     <script src="interaction.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 </body>
 </html>
