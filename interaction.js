@@ -95,7 +95,7 @@ function toggleMenu() {
 
 // Ejecutar al cargar la página para obtener los datos de la mascota
 window.onload = function() {
-    if (window.location.pathname.endsWith('aversifunciona.html')) {
+    if (window.location.pathname.endsWith('redirection.html')) {
         getPetData();
     }
 };
