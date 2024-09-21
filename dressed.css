@@ -37,6 +37,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-right: 30px;
     transition: background-color 0.5s ease, color 0.5s ease; /* Transiciones suaves */
 }
 
@@ -100,7 +101,7 @@
 /* Ajuste para el cuerpo */
 body {
     margin-top: 70px;
-    background-color: #99ee66;
+    background-color: #D9EEDB;
 }
 
 #petForm {
