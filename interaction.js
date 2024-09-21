@@ -86,11 +86,13 @@ function generatePageQRCode() {
 
     // Mostrar el QR en la página
     document.getElementById('qrcode').innerHTML = qr.createImgTag();
-}
+};
+
+
 function toggleMenu() {
     const menu = document.getElementById('menuItems');
     menu.classList.toggle('active');
-}
+};
 
 
 // Ejecutar al cargar la página para obtener los datos de la mascota
