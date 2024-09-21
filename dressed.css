@@ -1,18 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+/* Estilos para la barra de menú */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 20px;
 }
 
-form {
-    margin-bottom: 20px;
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
 }
 
-#qrcode {
-    margin-top: 20px;
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: translate(-50%, -50%);
 }
 
-a {
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    text-transform: uppercase;
+    display: block;
+    color: #4B3621;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: blue;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transiciones suaves */
+}
+
+.menu-items li a:hover {
+    transform: scale(1.2);
+    background-color: #4B3621;
+    color: #F5F5DC;
+    border-radius: 5px;
+    margin: top 0px;
+}
+
+
+
+/* Botón hamburguesa para dispositivos móviles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 30px;
+    color: #4B3621;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #4B3621;
+    margin: 4px;
+}
+
+/* Responsividad */
+@media (max-width: 590px) {
+    .menu-items {
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-out; /* Transición suave */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #F5F5DC;
+        width: 100%;
+        text-align: left;
+    }
+    .menu-items li {
+        margin: 10px 0;
+        color: #4B3621;
+    }
+
+    .menu-items.active {
+        max-height: 300px; /* Espacio suficiente para mostrar los elementos del menú */
+        transition: max-height 0.5s ease-in; /* Transición suave al abrir */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Ajuste para el cuerpo */
+body {
+    margin-top: 70px;
+    background-color: #99ee66;
 }
 
