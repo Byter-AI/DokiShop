@@ -103,3 +103,75 @@ body {
     background-color: #99ee66;
 }
 
+#petForm {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+#petForm h1 {
+    text-align: center;
+    color: #4B3621;
+    margin-bottom: 20px;
+}
+
+#petForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4B3621;
+}
+
+#petForm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    padding-right: 0px;
+}
+
+#petForm input:focus {
+    border-color: #4B3621;
+    border-width: 3px;
+    outline: none;
+
+}
+
+#petForm button {
+    background-color: #4B3621;
+    color: #F5F5DC;
+    border: 2px solid transparent; /* Define el borde inicialmente como transparente */
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s; /* Agrega transición al borde */
+    width: 100%;
+}
+
+#petForm button:hover {
+    transform: scale(1.05);
+    background-color: #F5F5DC;
+    color: #4B3621;
+    border-color: #4B3621; /* Cambia el color del borde en hover */
+    border-width: 3px;
+
+}
+
+@media (max-width: 500px) {
+    #petForm {
+        padding: 40px;
+        padding-left: 20px;
+    }
+
+    #petForm input,
+    #petForm button {
+        padding: 10px;
+    }
+}
