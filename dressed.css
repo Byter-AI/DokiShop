@@ -267,3 +267,72 @@ body {
         width: calc(100% - 60px);
     }
 }
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo como desees */
+    margin: auto;
+}
+
+.swiper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Asegúrate de que el contenedor se ajuste al ancho */
+}
+
+.swiper-slide {
+    flex: 0 0 auto; /* Asegura que cada imagen se mantenga en su tamaño natural */
+    width: 100px; /* Ajusta el ancho de cada imagen */
+}
+
+.tranding-slide-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.catalogo {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.catalogo img {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+button:hover {
+    background-color: #ff4b3a;
+}
