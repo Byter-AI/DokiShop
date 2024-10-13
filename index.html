@@ -17,7 +17,7 @@
     <nav class="menu">
         <ul class="menu-items" id="menuItems">
             <li><a href="#home">Inicio</a></li>
-            <li><a href="#about-us">Sobre Nosotros</a></li>
+            <li><a href="#registro">Registrar Mascota</a></li>
             <li><a href="#stock">Catálogo</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -35,39 +35,51 @@
 
         <!-- Contenido de la página -->
         <section id="home">
-            <h1>DokiShop</h1>
-            <p>¿Mascota Perdida? Por suerte estás en buenas manos, si no sabes cómo devolver la mascota que encontraste, contactános por nuestras redes, nosotros lo resolvemos.</p>
-            <a href="#contacto">Contacto</a>
+            <h1>Bienvenido a la página de Registro de Mascotas</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit mauris accumsan molestie blandit. Duis in mauris pharetra, rutrum justo in, gravida justo. Cras vel aliquet elit. Donec varius quis lectus id aliquet. Vivamus id laoreet sem. Ut porta volutpat ligula vel lobortis. Vestibulum condimentum pretium sodales. Suspendisse maximus ac erat a iaculis.</p>
         </section>
+
         <section id="registro">
+
             <h1>Registra a tu Mascota</h1>
+
             <center>
+
                 <img src="img/pet_01.png" id="petFormImg1">
+
+                <form id="petForm">
+                    <label for="name">Nombre de la Mascota:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="type">Tipo de Mascota:</label>
+                    <input type="text" id="type" name="type" required>
+
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <hr>
+
+                    <button type="button" class="button1" onclick="redirectWithoutQRCode()">Registrar Mascota</button>
+                </form>
 
                 <img src="img/pet_02.png" id="petFormImg2">
 
             </center>
+
         </section>
-               <section id="stock">
+
+        <section id="stock">
             <h1>Catálogo</h1>
                 <section id="tranding">
                     <div class="container">
                         <button class="prev-btn">&#10094;</button>
                         <div class="catalogo">
-                            <img src="img/stock10.png" alt="Producto 1">
-                            <img src="img/stock14.png" alt="Producto 2">
-                            <img src="img/stock2.png" alt="Producto 3">
-                            <img src="img/stock13.png" alt="Producto 4">
-                            <img src="img/stock3.png" alt="Producto 5">
-                            <img src="img/stock4.png" alt="Producto 6">
-                            <img src="img/stock5.png" alt="Producto 7">
-                            <img src="img/stock11.png" alt="Producto 8">
-                            <img src="img/stock6.png" alt="Producto 9">
-                            <img src="img/stock7.png" alt="Producto 10">
-                            <img src="img/stock8.png" alt="Producto 11">
-                            <img src="img/stock12.png" alt="Producto 12">
-                            <img src="img/stock9.png" alt="Producto 13">
-                            <img src="img/stock10.png" alt="Producto 14">
+                            <img src="C:\Users\ina1v\OneDrive\Documentos\2024\personal\Paginas\Doki_Shop\stock2.png" alt="Producto 1">
+                            <img src="C:\Users\ina1v\OneDrive\Documentos\2024\personal\Paginas\Doki_Shop\stock11.png" alt="Producto 2">
+                            <img src="C:\Users\ina1v\OneDrive\Documentos\2024\personal\Paginas\Doki_Shop\stock5.png" alt="Producto 3">
+                            <img src="C:\Users\ina1v\OneDrive\Documentos\2024\personal\Paginas\Doki_Shop\stock6.png" alt="Producto 4">
+                            <img src="C:\Users\ina1v\OneDrive\Documentos\2024\personal\Paginas\Doki_Shop\stock9.png" alt="Producto 5">
+                        </div>
                         <button class="next-btn">&#10095;</button>
                     </div>
 
@@ -81,16 +93,10 @@
         </div>
         <section id="contacto">
             <h1>Contacto</h1>
-            <p>Calle Córdoba al 235 en el local D</p>
-            <a href="https://wa.me/<543875264344>">WhatsApp</a>
-        <section id="about-us">
-            <h1>Sobre Nosotros</h1>
-            <p>
-                Somos una empresa dedicada a la fabricación y venta de artículos para mascotas. Nos centramos en priorizar la seguridad de los datos y privacidad de nuestros clientes, asi como también el bienestar de los animales con los que tratamos.
-                Queremos ser la tienda para mascotas de referencia y llevar a DokiShop a cada rincón del mapa. Actualmente, nuestro plan de expansión continúa en marcha, y nos esforzamos para contribuir a la creación de un mundo donde cada mascota tenga la oportunidad de regresar a su hogar de forma segura. 
-                En nuestra empresa combinamos el potencial crecimiento que posee el comercio electrónico y la gran cantidad de hogares que tienen mascotas con una alternativa distinta y un significado comunitario para ayudar a muchos perros a volver a su hogar
-            </p>
+            <p>Información de contacto de la página aquí.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit mauris accumsan molestie blandit. Duis in mauris pharetra, rutrum justo in, gravida justo. Cras vel aliquet elit. Donec varius quis lectus id aliquet. Vivamus id laoreet sem. Ut porta volutpat ligula vel lobortis. Vestibulum condimentum pretium sodales. Suspendisse maximus ac erat a iaculis.</p>
         </section>
+
         <div id="qrcode"></div>
 
     </div>
