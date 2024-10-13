@@ -267,6 +267,7 @@ body {
         width: calc(100% - 60px);
     }
 }
+
 .container {
     position: relative;
     overflow: hidden;
@@ -290,6 +291,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .catalogo {
@@ -321,20 +329,7 @@ button {
 .prev-btn {
     left: 10px;
 }
-a {
-     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    z-index: 10;
-     
-}
+
 .next-btn {
     right: 10px;
 }
