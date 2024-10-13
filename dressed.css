@@ -1,10 +1,10 @@
 /* Variables globales */
 :root {
-    --MainColor1: #3c4a21;
-    --MainColor2: #6b7b4c;
-    --MainColor3: #bcb46c;
-    --MainColor4: #4B3621;
-    --MainColor5: #F5F5DC;
+     --MainColor1: #A8B95B; /* Pastel verde claro */
+    --MainColor2: #B7C8A3; /* Pastel verde suave */
+    --MainColor3: #D7D18E; /* Pastel amarillo claro */
+    --MainColor4: #A68B7E; /* Pastel marrón claro */
+    --MainColor5: #EDEAD1; /* Pastel beige suave */
 }
 
 /* Fuentes */
