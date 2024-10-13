@@ -30,3 +30,8 @@ function movePrev() {
     catalogo.style.transition = 'transform 0.5s ease';
     catalogo.style.transform = `translateX(${-imgWidth * currentIndex}px)`;
 }
+
+function toggleMenu() {
+    const menu = document.getElementById('menuItems');
+    menu.classList.toggle('active');
+};
