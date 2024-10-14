@@ -192,7 +192,7 @@ body {
     font-family: PlaypenSans;
 }
 
-#registro {
+#about-us {
     position: relative;
 }
 
@@ -328,12 +328,26 @@ button {
 
 .prev-btn {
     left: 10px;
+     border-radius: 5px;
 }
 
 .next-btn {
     right: 10px;
+     border-radius: 5px;
 }
-
+#contacto a {
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
 button:hover {
     background-color: #ff4b3a;
 }
