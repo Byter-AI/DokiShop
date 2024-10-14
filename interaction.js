@@ -90,7 +90,7 @@ function generatePageQRCode() {
 
 
 function toggleMenu() {
-    const menu = document.getElementById('menuItems');
+    const menu = document.getElementById('menu-items');
     menu.classList.toggle('active');
 };
 
