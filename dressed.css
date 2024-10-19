@@ -1,10 +1,15 @@
 /* Variables globales */
 :root {
-     --MainColor1: #A8B95B; /* Pastel verde claro */
-    --MainColor2: #B7C8A3; /* Pastel verde suave */
-    --MainColor3: #D7D18E; /* Pastel amarillo claro */
-    --MainColor4: #A68B7E; /* Pastel marrón claro */
-    --MainColor5: #EDEAD1; /* Pastel beige suave */
+    --MainColor1: #A8B95B;
+    /* Pastel verde claro */
+    --MainColor2: #B7C8A3;
+    /* Pastel verde suave */
+    --MainColor3: #D7D18E;
+    /* Pastel amarillo claro */
+    --MainColor4: #A68B7E;
+    /* Pastel marrón claro */
+    --MainColor5: #EDEAD1;
+    /* Pastel beige suave */
 }
 
 /* Fuentes */
@@ -150,6 +155,7 @@ hr {
     background-color: var(--MainColor4);
     margin: 4px;
 }
+
 .container {
     position: relative;
     width: 80%;
@@ -185,13 +191,14 @@ button {
 
 .prev-btn {
     left: 10px;
-     border-radius: 5px;
+    border-radius: 5px;
 }
 
 .next-btn {
     right: 10px;
-     border-radius: 5px;
+    border-radius: 5px;
 }
+
 #contacto a {
     top: 50%;
     transform: translateY(-50%);
@@ -202,6 +209,7 @@ button {
     cursor: pointer;
     font-size: 1.5rem;
 }
+
 button:hover {
     background-color: #ff4b3a;
 }
@@ -307,36 +315,39 @@ body {
     z-index: 1;
 }
 
-    #petFormImg1 {
-        display: none;
-    }
+#petFormImg1 {
+    display: none;
+}
 
-    #petFormImg2 {
-        display: none;
-    }
+#petFormImg2 {
+    display: none;
+}
 
-    #petForm {
-        width: calc(100% - 60px);
-    }
+#petForm {
+    width: calc(100% - 60px);
 }
 
 .container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 600px; /* Ajusta el ancho máximo como desees */
+    max-width: 600px;
+    /* Ajusta el ancho máximo como desees */
     margin: auto;
 }
 
 .swiper {
     display: flex;
     transition: transform 0.5s ease;
-    width: 100%; /* Asegúrate de que el contenedor se ajuste al ancho */
+    width: 100%;
+    /* Asegúrate de que el contenedor se ajuste al ancho */
 }
 
 .swiper-slide {
-    flex: 0 0 auto; /* Asegura que cada imagen se mantenga en su tamaño natural */
-    width: 100px; /* Ajusta el ancho de cada imagen */
+    flex: 0 0 auto;
+    /* Asegura que cada imagen se mantenga en su tamaño natural */
+    width: 100px;
+    /* Ajusta el ancho de cada imagen */
 }
 
 .tranding-slide-img {
@@ -344,6 +355,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* Contenedor para la tarjeta */
 .card {
     display: inline-block;
@@ -353,14 +365,16 @@ body {
 /* Estructura interna de la tarjeta */
 .card-inner {
     position: relative;
-    width: 200px;
+    width: 211px;
     height: 300px;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
 }
 
 /* Caras frontal y trasera de la tarjeta */
-.card-front, .card-back {
+.card-front,
+.card-back {
+    position: absolute;
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -381,9 +395,11 @@ body {
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
+
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
+
 /* Contenedor para la tarjeta */
 .card {
     display: inline-block;
@@ -400,7 +416,8 @@ body {
 }
 
 /* Caras frontal y trasera de la tarjeta */
-.card-front, .card-back {
+.card-front,
+.card-back {
     backface-visibility: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -421,8 +438,7 @@ body {
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
+
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
-
-
