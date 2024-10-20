@@ -90,7 +90,7 @@ function generatePageQRCode() {
 
 
 function toggleMenu() {
-    const menu = document.getElementById('menu-items');
+    const menu = document.getElementById('menuItems');
     menu.classList.toggle('active');
 };
 
@@ -118,7 +118,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    navigation: 
+    navigation,
     
 });
 
