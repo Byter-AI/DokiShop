@@ -442,3 +442,22 @@ body {
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
+a.redes {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--MainColor2); /* Un rosa pastel que mencionaste antes */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.redes:hover {
+    background-color: var(--MainColor5); /* Un tono más oscuro para hover */
+    transform: translateY(-2px); /* Efecto al hacer hover */
+}
