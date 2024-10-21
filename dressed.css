@@ -158,23 +158,45 @@ hr {
 
 .container {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
 .catalogo {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
     transition: transform 0.5s ease;
 }
 
 .catalogo img {
-    width: calc(33% - 10px);
+    width: 200px;
     border-radius: 10px;
     margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+    border-radius: 5px;
+}
+
+.next-btn {
+    right: 10px;
+    border-radius: 5px;
 }
 
 #contacto a {
@@ -208,25 +230,20 @@ button:hover {
         width: 100%;
         text-align: left;
     }
+
     .menu-items li {
         color: #4B3621;
     }
+
     .menu-items.active {
         max-height: 300px;
         /* Espacio suficiente para mostrar los elementos del menú */
         transition: 0.5s ease-in;
         /* Transición suave al abrir */
     }
+
     .hamburger {
         display: flex;
-    }
-    .mainContainer {
-        max-width: 600px;
-        margin: auto;
-        padding: 0px 6px 0px 6px;
-    }
-    .catalogo img {
-        width: calc(50% - 10px); 
     }
 }
 
@@ -307,14 +324,14 @@ body {
 }
 
 #petForm {
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
 }
 
 .container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
     /* Ajusta el ancho máximo como desees */
     margin: auto;
 }
@@ -341,66 +358,87 @@ body {
 
 /* Contenedor para la tarjeta */
 .card {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  perspective: 1000px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
+/* Estructura interna de la tarjeta */
 .card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 211px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
 }
 
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #bbb;
-  color: black;
-}
-
+/* Caras frontal y trasera de la tarjeta */
+.card-front,
 .card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Imagen frontal (inicial) */
+.card-front {
+    background-color: white;
+}
+
+/* Imagen trasera (volteada) */
+.card-back {
+    background-color: #f1f1f1;
+    transform: rotateY(180deg);
+}
+
 /* Al hacer clic, voltea la tarjeta */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
 
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
 
 /* Contenedor para la tarjeta */
-a.redes {
+.card {
     display: inline-block;
-    padding: 12px 24px;
-    background-color: var(--MainColor1);
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 10px;
 }
 
-a.redes:hover {
-    background-color: #eb9ac2; /* Un tono más oscuro para hover */
-    transform: translateY(-2px); /* Efecto al hacer hover */
+/* Estructura interna de la tarjeta */
+.card-inner {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
 }
 
+/* Caras frontal y trasera de la tarjeta */
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen frontal (inicial) */
+.card-front {
+    background-color: white;
+}
+
+/* Imagen trasera (volteada) */
+.card-back {
+    background-color: #f1f1f1;
+    transform: rotateY(180deg);
+}
+
+/* Al hacer clic, voltea la tarjeta */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
