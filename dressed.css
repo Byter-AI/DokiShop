@@ -189,16 +189,6 @@ button {
     z-index: 10;
 }
 
-.prev-btn {
-    left: 10px;
-    border-radius: 5px;
-}
-
-.next-btn {
-    right: 10px;
-    border-radius: 5px;
-}
-
 #contacto a {
     top: 50%;
     transform: translateY(-50%);
