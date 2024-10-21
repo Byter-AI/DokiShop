@@ -225,6 +225,9 @@ button:hover {
         margin: auto;
         padding: 0px 6px 0px 6px;
     }
+    .catalogo img {
+        width: calc(50% - 10px); 
+    }
 }
 
 body {
@@ -422,3 +425,23 @@ body {
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
+a.redes {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f8b6d3; /* Un rosa pastel que mencionaste antes */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.redes:hover {
+    background-color: #eb9ac2; /* Un tono más oscuro para hover */
+    transform: translateY(-2px); /* Efecto al hacer hover */
+}
+
