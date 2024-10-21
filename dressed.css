@@ -341,46 +341,41 @@ body {
 
 /* Contenedor para la tarjeta */
 .card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    /* Necesario para el efecto de volteo */
-    margin: 20px;
-    position: relative;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
 }
 
-/* Contenedor interno que se voltea */
 .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-/* Al hacer hover en la tarjeta, voltearla */
 .card:hover .card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-/* Estilos para las imágenes de frente y atrás */
 .card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-/* Estilo de la imagen frontal */
 .card-front {
-    background-color: #fff;
+  background-color: #bbb;
+  color: black;
 }
 
-/* Estilo de la imagen trasera (volteada) */
 .card-back {
-    background-color: #f0f0f0;
-    transform: rotateY(180deg);
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 /* Al hacer clic, voltea la tarjeta */
 
