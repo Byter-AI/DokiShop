@@ -220,20 +220,22 @@ button:hover {
         width: 100%;
         text-align: left;
     }
-
     .menu-items li {
         color: #4B3621;
     }
-
     .menu-items.active {
         max-height: 300px;
         /* Espacio suficiente para mostrar los elementos del menú */
         transition: 0.5s ease-in;
         /* Transición suave al abrir */
     }
-
     .hamburger {
         display: flex;
+    }
+    .mainContainer {
+        max-width: 900px;
+        margin: auto;
+        padding: 0px 16px 0px 16px;
     }
 }
 
