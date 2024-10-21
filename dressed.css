@@ -165,11 +165,13 @@ hr {
 
 .catalogo {
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     transition: transform 0.5s ease;
 }
 
 .catalogo img {
-    width: 200px;
+    width: calc(33% - 10px);
     border-radius: 10px;
     margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
