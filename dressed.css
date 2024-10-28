@@ -138,7 +138,14 @@ hr {
 
 .catalogo {
     display: flex;
-    transition: transform 0.5s ease;
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    gap: 10px; /* Espaciado entre las tarjetas */
+}
+
+.card {
+    flex: 1 1 150px; /* Permite que las tarjetas se expandan y reduzcan, con un mínimo de 150px */
+    max-width: 200px; /* Máximo ancho de cada tarjeta */
 }
 
 .catalogo img {
