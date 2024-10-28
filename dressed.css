@@ -216,6 +216,9 @@ button:hover {
     .hamburger {
         display: flex;
     }
+    .catalogo {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
 }
 
 body {
