@@ -219,6 +219,16 @@ button:hover {
     .catalogo {
         grid-template-columns: 1fr; /* Una sola columna */
     }
+     .catalogo .card {
+        width: 100px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Reduce image size inside cards */
+    .catalogo .card img {
+        width: 80px; /* Adjust image size to be smaller */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 body {
