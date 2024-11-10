@@ -185,7 +185,7 @@ button:hover {
     background-color: #ff4b3a;
 }
 
-/* Responsividad */
+/* Responsive*/
 @media (max-width: 800px) {
     .menu-items {
         display: block;
@@ -228,6 +228,9 @@ button:hover {
     .catalogo .card img {
         width: 80px; /* Adjust image size to be smaller */
         height: auto; /* Maintain aspect ratio */
+    }
+    body {
+        margin: 10% 10%;
     }
 }
 
