@@ -134,26 +134,8 @@ hr {
     width: 80%;
     margin: auto;
     overflow: hidden;
-}
 
-.catalogo {
-    display: flex;
-    flex-wrap: wrap;  /* Permite que los elementos se envuelvan */
-    justify-content: center; /* Centra los elementos en el contenedor */
-    gap: 10px; /* Espaciado entre las tarjetas */
-}
 
-.card {
-    flex: 1 1 150px; /* Permite que las tarjetas se expandan y reduzcan, con un mínimo de 150px */
-    max-width: 200px; /* Máximo ancho de cada tarjeta */
-}
-
-.catalogo img {
-    display: flex;
-    width: 200px;
-    border-radius: 10px;
-    margin-right: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
